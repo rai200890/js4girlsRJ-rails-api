@@ -138,10 +138,10 @@ DEPENDENCIES
   rails (= 4.2.3)
   rails-api
   rails_12factor
-  rake
   roo
   rspec-rails
   spring
+  thor
 
 BUNDLED WITH
    1.10.6

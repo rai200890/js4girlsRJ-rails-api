@@ -7,7 +7,7 @@ gem 'active_model_serializers'
 gem 'spring', group: :development
 gem 'pg'
 gem 'roo'
-gem 'rake'
+gem 'thor'
 gem 'rails_12factor', group: :production
 
 group :test, :development do
@@ -17,7 +17,4 @@ end
 group :test do
   gem 'rspec-rails'
 end
-	
-	# Deploy with Capistrano
-# gem 'capistrano', :group => :development
 

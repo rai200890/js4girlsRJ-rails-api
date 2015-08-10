@@ -1,0 +1,18 @@
+development:
+  host: localhost
+  adapter: postgresql
+  database: js4girlsrj_development
+  username: jsgirlsrj
+  password: jsgirlsrj        
+test:
+  host: localhost
+  adapter: postgresql
+  database: js4girlsrj_test
+  username: jsgirlsrj
+  password: jsgirlsrj
+
+production:
+  adapter: postgresql
+  database: js4girlsrj_production
+  username: jsgirlsrj
+  password: 

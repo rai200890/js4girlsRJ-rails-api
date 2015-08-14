@@ -8,6 +8,9 @@ gem 'spring', group: :development
 gem 'pg'
 gem 'roo'
 gem 'thor'
+gem 'thor-rails'
+gem 'activerecord-import'
+gem 'gravtastic'
 gem 'rails_12factor', group: :production
 
 group :test, :development do

@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
 
   def index
     @contacts = Contact.all
-    render json: @contacts, methods: [:gravatar_url]
+    render json: @contacts, methods: [:gravatar_url, :tag_names]
   end
 
   def show
@@ -38,11 +38,11 @@ class ContactsController < ApplicationController
 
   private
 
-    def set_contact
-      @contact = Contact.find(params[:id])
-    end
+  def set_contact
+    @contact = Contact.find(params[:id])
+  end
 
-    def contact_params
-      params[:contact]
-    end
+  def contact_params
+    params[:contact]
+  end
 end

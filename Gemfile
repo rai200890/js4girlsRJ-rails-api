@@ -12,6 +12,7 @@ gem 'thor-rails'
 gem 'activerecord-import'
 gem 'gravtastic'
 gem 'rails_12factor', group: :production
+gem 'rack-cors', '0.3.0'
 
 group :test, :development do
   gem 'byebug'

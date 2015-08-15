@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150814031335) do
+ActiveRecord::Schema.define(version: 20150815020027) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,20 @@ ActiveRecord::Schema.define(version: 20150814031335) do
     t.string   "twitter"
     t.string   "city"
     t.string   "state"
+  end
+
+  create_table "contacts_tags", force: :cascade do |t|
+    t.integer "contact_id"
+    t.integer "tag_id"
+  end
+
+  add_index "contacts_tags", ["contact_id"], name: "index_contacts_tags_on_contact_id", using: :btree
+  add_index "contacts_tags", ["tag_id"], name: "index_contacts_tags_on_tag_id", using: :btree
+
+  create_table "tags", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
